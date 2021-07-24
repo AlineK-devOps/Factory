@@ -1,10 +1,11 @@
 package female;
 
+import main.AbstractFactory;
 import main.Human;
 
 /** Фабрика женщин XD **/
 
-public class FemaleFactory {
+public class FemaleFactory implements AbstractFactory {
     public Human getPerson(int age){ //фабричный метод
         if (age <= KidGirl.MAX_AGE)
             return new KidGirl();
