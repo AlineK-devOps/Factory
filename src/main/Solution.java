@@ -6,9 +6,7 @@ import male.MaleFactory;
 
 public class Solution {
     public static void main(String[] args) {
-        MaleFactory maleFactory = new MaleFactory();
-        System.out.println(maleFactory.getPerson(99));
-        System.out.println(maleFactory.getPerson(4));
-        System.out.println(maleFactory.getPerson(15));
+        Human human = FactoryProducer.getFactory(FactoryProducer.HumanFactoryType.MALE).getPerson(19);
+        System.out.println(human);
     }
 }
